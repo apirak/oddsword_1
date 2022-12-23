@@ -1,5 +1,6 @@
 class KeysController < ApplicationController
   before_action :set_key, only: %i[ show edit update destroy ]
+  befoer_action :set_table_file
 
   # GET /keys or /keys.json
   def index

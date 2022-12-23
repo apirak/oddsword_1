@@ -10,6 +10,7 @@ language1 = Language.create({name: "English US", code: "EN us"})
 language2 = Language.create({name: "Thai", code: "TH"})
 
 tableFile = TableFile.create(:name => "discord", :description => "discord phrase")
+
 key1 = tableFile.keys.create(:key => "general.back", :description => "from ios")
 key2 = tableFile.keys.create(:key => "general.submit", :description => "from ios")
 
