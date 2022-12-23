@@ -1,0 +1,14 @@
+<p style="color: green"><%= notice %></p>
+
+<h1>Table files</h1>
+
+<div id="table_files">
+  <% @table_files.each do |table_file| %>
+    <%= render table_file %>
+    <p>
+      <%= link_to "Show this table file", table_file %>
+    </p>
+  <% end %>
+</div>
+
+<%= link_to "New table file", new_table_file_path %>
